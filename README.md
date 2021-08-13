@@ -29,7 +29,7 @@ This project was developed using the following technologies:
 Clone the project and access the folder
 
 ```bash
-$ git clone https://github.com/evertonfxavier/ignite-reactjs-desafio-02.git
+$ git clone https://github.com/evertonfxavier/ignite-02-rocketshoes-desafio.git
 
 ```
 
