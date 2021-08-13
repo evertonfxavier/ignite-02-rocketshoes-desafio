@@ -3,7 +3,7 @@
 ## Preview
 
 <h1 align="center">
-    <img alt="rocketshoes" title="rocketshoes" src="https://i.imgur.com/9Fqbsdx.png" />
+    <img alt="rocketshoes" title="rocketshoes" src="https://i.ibb.co/cCTNFr0/Screenshot-from-2021-08-12-23-43-34.png" />
 </h1>
 
 <br>
