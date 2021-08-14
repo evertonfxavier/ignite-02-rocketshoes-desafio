@@ -1,9 +1,9 @@
-# Teste sorocaba.com
+# RocketShoes
 
 ## Preview
 
 <h1 align="center">
-    <img alt="rocketshoes" title="rocketshoes" src="https://i.imgur.com/9Fqbsdx.png" />
+    <img alt="rocketshoes" title="rocketshoes" src="https://i.ibb.co/cCTNFr0/Screenshot-from-2021-08-12-23-43-34.png" />
 </h1>
 
 <br>
@@ -29,7 +29,7 @@ This project was developed using the following technologies:
 Clone the project and access the folder
 
 ```bash
-$ git clone https://github.com/evertonfxavier/ignite-reactjs-desafio-02.git
+$ git clone https://github.com/evertonfxavier/ignite-02-rocketshoes-desafio.git
 
 ```
 
