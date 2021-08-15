@@ -38,7 +38,7 @@ export function CartProvider({ children }: CartProviderProps): JSX.Element {
       const updatedCart = cart.map((product) => ({ ...product }));
 
       //verificar se o produto ja existe no carrinho
-      const productExists = updatedCart.find((item) => item.id === productId);
+      const productAlreadyExist = updatedCart.find((item) => item.id === productId);
 
       //pegar item em estoque pelo id do produto
       const stock = await api.get(`/stock/${productId}`);
@@ -48,14 +48,14 @@ export function CartProvider({ children }: CartProviderProps): JSX.Element {
       //console.log("stockAmount " + stockAmount);
 
       //checar quantidade item do mesmo produto no carrinho
-      const currentAmount = productExists ? productExists.amount : 0;
+      const currentAmount = productAlreadyExist ? productAlreadyExist.amount : 0;
       //console.log("currentAmount " + currentAmount);
 
       //Se nao existe item no carrinho, add +1
       const amount = currentAmount + 1;
 
-      if (productExists) {
-        productExists.amount = amount;
+      if (productAlreadyExist) {
+        productAlreadyExist.amount = amount;
       } else {
         const product = await api.get(`/products/${productId}`);
 
@@ -123,10 +123,10 @@ export function CartProvider({ children }: CartProviderProps): JSX.Element {
       }
 
       const updatedCart = cart.map((product) => ({ ...product }));
-      const productExists = updatedCart.find((item) => item.id === productId);
+      const productAlreadyExist = updatedCart.find((item) => item.id === productId);
 
-      if (productExists) {
-        productExists.amount = amount;
+      if (productAlreadyExist) {
+        productAlreadyExist.amount = amount;
         setCart(updatedCart);
         localStorage.setItem("@RocketShoes:cart", JSON.stringify(updatedCart));
       } else {
